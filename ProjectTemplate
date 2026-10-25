@@ -1,0 +1,469 @@
+# ZÁKLADNÍ SPECIFIKACE PROJEKTU
+
+**Verze dokumentu:** 1.0  
+**Stav projektu:** Koncept / Analýza / Návrh / Vývoj / Provoz  
+**Datum poslední aktualizace:**  
+**Název projektu:**  
+
+---
+
+# 1. ÚČEL A VIZE PROJEKTU
+
+## 1.1 Hlavní účel
+[Jaký problém má aplikace řešit a proč vzniká?]
+
+## 1.2 Cíloví uživatelé
+[Kdo bude aplikaci používat?]
+
+## 1.3 Hlavní přínosy
+[Co má aplikace uživatelům umožnit nebo usnadnit?]
+
+## 1.4 Rozsah projektu
+**Součástí projektu je:**
+- [Funkce a oblasti zahrnuté do projektu]
+
+**Mimo rozsah projektu je:**
+- [Co se v této fázi nebude řešit]
+
+---
+
+# 2. FUNKČNÍ POŽADAVKY
+
+## 2.1 Přehled funkcí
+- F-001:
+- F-002:
+- F-003:
+
+## 2.2 Uživatelské scénáře
+Pro každou důležitou funkci popsat:
+- Kdo ji provádí:
+- Co chce udělat:
+- Jaké jsou vstupní podmínky:
+- Jaký je běžný postup:
+- Jaký je očekávaný výsledek:
+- Jaké mohou nastat chyby nebo výjimky:
+
+## 2.3 Uživatelské rozhraní
+- Požadované obrazovky:
+- Formuláře:
+- Seznamy a tabulky:
+- Vyhledávání a filtrování:
+- Přehledy a dashboardy:
+- Exporty a tisk:
+- Další požadavky:
+
+---
+
+# 3. UŽIVATELÉ A OPRÁVNĚNÍ
+
+## 3.1 Typy uživatelů
+- ROLE-001:
+- ROLE-002:
+- ROLE-003:
+
+## 3.2 Oprávnění
+Pro každou roli určit:
+- Čtení dat:
+- Vytváření záznamů:
+- Úpravy záznamů:
+- Mazání a archivace:
+- Schvalování:
+- Export dat:
+- Správa uživatelů:
+- Přístup k citlivým údajům:
+
+## 3.3 Pravidla přístupu
+- Přístup podle role:
+- Přístup podle vlastníka záznamu:
+- Přístup podle organizace nebo oddělení:
+- Další omezení:
+
+---
+
+# 4. OBCHODNÍ A SYSTÉMOVÁ PRAVIDLA
+
+## 4.1 Základní pravidla
+- BR-001:
+- BR-002:
+- BR-003:
+
+## 4.2 Validace dat
+- Povinná pole:
+- Povolené hodnoty:
+- Unikátní hodnoty:
+- Rozsahy a limity:
+- Formáty:
+- Závislosti mezi poli:
+
+## 4.3 Životní cyklus záznamů
+- Možné stavy:
+- Povolené změny stavů:
+- Podmínky přechodů:
+- Kdo může změny provádět:
+- Podmínky uzavření:
+- Podmínky zrušení:
+- Podmínky opětovného otevření:
+
+## 4.4 Výjimky
+- Výjimka:
+- Očekávané chování:
+- Dopad na data:
+- Odpovědnost za řešení:
+
+---
+
+# 5. DATOVÝ MODEL
+
+## 5.1 Přehled hlavních entit
+Pro každou entitu uvést:
+- Název:
+- Účel:
+- Význam v systému:
+- Vlastník dat:
+- Vazby na další entity:
+
+## 5.2 Seznam entit
+- ENT-001:
+- ENT-002:
+- ENT-003:
+
+## 5.3 Atributy entit
+U každé entity specifikovat:
+- Název atributu:
+- Význam:
+- Datový typ:
+- Povinný / nepovinný:
+- Výchozí hodnota:
+- Unikátnost:
+- Validační pravidla:
+- Citlivost údajů:
+
+## 5.4 Vztahy mezi entitami
+Pro každý vztah určit:
+- Zdrojová entita:
+- Cílová entita:
+- Typ vztahu: 1:1 / 1:N / M:N:
+- Povinnost vztahu:
+- Pravidla při odstranění souvisejícího záznamu:
+
+## 5.5 Identifikátory
+- Primární klíče:
+- Cizí klíče:
+- Veřejná identifikační čísla:
+- Pravidla generování identifikátorů:
+- Požadavky na unikátnost:
+
+## 5.6 Historie a archivace
+- Je nutná historie změn?
+- Které údaje se mají verzovat?
+- Je povoleno fyzické mazání?
+- Kdy se používá archivace?
+- Jak dlouho se uchovávají data?
+- Jak se řeší oprava historických údajů?
+
+---
+
+# 6. PRAVIDLA DATABÁZE
+
+## 6.1 Databázová platforma
+- Preferovaný systém:
+- Verze:
+- Prostředí:
+- Důvod výběru:
+
+## 6.2 Integrita dat
+- NOT NULL:
+- UNIQUE:
+- CHECK:
+- FOREIGN KEY:
+- Výchozí hodnoty:
+- Další omezení:
+
+## 6.3 Normalizace
+- Požadovaná úroveň normalizace:
+- Přípustná denormalizace:
+- Odůvodnění výjimek:
+
+## 6.4 Transakce a souběh
+- Kritické operace:
+- Požadavky na atomické zpracování:
+- Rizika souběžných změn:
+- Pravidla zamykání nebo řešení konfliktů:
+
+## 6.5 Výkon
+- Očekávaný počet uživatelů:
+- Odhad počtu záznamů:
+- Nejčastější dotazy:
+- Požadavky na odezvu:
+- Požadavky na indexy:
+
+## 6.6 Čas a lokalizace
+- Časová zóna:
+- Ukládání data a času:
+- Jazyk:
+- Měna:
+- Formátování čísel:
+- Pravidla zaokrouhlování:
+
+---
+
+# 7. APLIKAČNÍ ARCHITEKTURA
+
+## 7.1 Technologie
+- Frontend:
+- Backend:
+- Databáze:
+- API:
+- Hosting:
+- Další technologie:
+
+## 7.2 Architektonický přístup
+- Typ aplikace:
+- Rozdělení komponent:
+- Zodpovědnosti jednotlivých vrstev:
+- Pravidla komunikace mezi vrstvami:
+- Způsob konfigurace:
+- Správa tajných údajů:
+
+## 7.3 API a integrace
+Pro každou integraci:
+- Název:
+- Účel:
+- Směr komunikace:
+- Typ rozhraní:
+- Autentizace:
+- Formát dat:
+- Chybové stavy:
+- Opakování požadavků:
+- Limity a časové limity:
+
+---
+
+# 8. BEZPEČNOST A OCHRANA DAT
+
+## 8.1 Přihlašování
+- Způsob autentizace:
+- Správa relací:
+- Vícefaktorové ověřování:
+- Obnova přístupu:
+
+## 8.2 Autorizace
+- Kontrola oprávnění na backendu:
+- Omezení přístupu k jednotlivým záznamům:
+- Ochrana administrátorských funkcí:
+
+## 8.3 Ochrana dat
+- Osobní údaje:
+- Citlivé údaje:
+- Šifrování při přenosu:
+- Šifrování uložených dat:
+- Retenční pravidla:
+- Požadavky na GDPR:
+- Anonymizace a pseudonymizace:
+
+## 8.4 Audit
+- Kdo provedl změnu:
+- Kdy byla provedena:
+- Jaký údaj byl změněn:
+- Původní a nová hodnota:
+- Evidence přístupů:
+- Ochrana auditních záznamů:
+
+---
+
+# 9. PROVOZ A ÚDRŽBA
+
+## 9.1 Prostředí
+- Vývojové:
+- Testovací:
+- Staging:
+- Produkční:
+
+## 9.2 Zálohování a obnova
+- Frekvence záloh:
+- Doba uchování:
+- Testování obnovy:
+- Maximální přípustná ztráta dat:
+- Maximální doba obnovy:
+
+## 9.3 Monitoring
+- Logování:
+- Chybová hlášení:
+- Monitoring výkonu:
+- Upozornění:
+- Zdravotní kontroly aplikace:
+
+## 9.4 Migrace databáze
+- Nástroj pro migrace:
+- Verzování schématu:
+- Pravidla nasazení:
+- Zpětná kompatibilita:
+- Postup při neúspěšné migraci:
+
+---
+
+# 10. TESTOVÁNÍ A KVALITA
+
+## 10.1 Typy testů
+- Jednotkové:
+- Integrační:
+- Databázové:
+- API:
+- Bezpečnostní:
+- Výkonnostní:
+- Uživatelské:
+
+## 10.2 Kritické scénáře
+- TEST-001:
+- TEST-002:
+- TEST-003:
+
+## 10.3 Akceptační kritéria
+- Co musí být splněno?
+- Jak se ověří správnost výsledku?
+- Jaké chyby blokují vydání?
+- Kdo schvaluje hotovou funkci?
+
+---
+
+# 11. POŽADOVANÉ VÝSTUPY
+
+Označit požadované artefakty:
+- [ ] Funkční specifikace
+- [ ] Technická specifikace
+- [ ] ER diagram
+- [ ] Datový slovník
+- [ ] Logický a fyzický databázový model
+- [ ] SQL DDL skripty
+- [ ] Indexy a integritní omezení
+- [ ] Ukázková testovací data
+- [ ] API specifikace
+- [ ] Návrh uživatelského rozhraní
+- [ ] Matice oprávnění
+- [ ] Testovací scénáře
+- [ ] Migrační skripty
+- [ ] Bezpečnostní analýza
+- [ ] Dokumentace nasazení
+- [ ] Dokumentace údržby
+- [ ] Další:
+
+---
+
+# 12. OTEVŘENÉ OTÁZKY A ROZHODNUTÍ
+
+Pro každou otázku nebo rozhodnutí evidovat:
+- ID:
+- Otázka:
+- Proč je důležitá:
+- Dostupné varianty:
+- Doporučení:
+- Stav: Otevřeno / Navrženo / Schváleno / Zamítnuto
+- Odůvodnění:
+- Dopad na databázi:
+- Dopad na aplikaci:
+
+---
+
+# 13. PŘEDPOKLADY A OMEZENÍ
+
+## 13.1 Potvrzené požadavky
+[Požadavky výslovně schválené zadavatelem.]
+
+## 13.2 Pracovní předpoklady
+[Předpoklady, které je potřeba potvrdit.]
+
+## 13.3 Omezení
+[Technická, finanční, časová, legislativní a provozní omezení.]
+
+## 13.4 Rizika
+[Rizika a jejich dopad na projekt.]
+
+---
+
+# 14. ZMĚNOVÉ ŘÍZENÍ
+
+- Verze specifikace:
+- Popis změny:
+- Důvod změny:
+- Dotčené požadavky:
+- Dotčené entity a tabulky:
+- Dopad na existující data:
+- Dopad na API a uživatelské rozhraní:
+- Migrační postup:
+- Testy:
+- Schválení změny:
+
+---
+
+# 15. POKYNY PRO AI — HLAVNÍ PRACOVNÍ PRAVIDLA
+
+1. Považuj tuto specifikaci za hlavní zdroj požadavků projektu.
+2. Nerozhoduj svévolně o nejasných obchodních pravidlech.
+3. Důsledně rozlišuj potvrzené požadavky, návrhy, předpoklady a otevřené otázky.
+4. U nejasností s významným dopadem na datový model, bezpečnost nebo fungování aplikace polož doplňující otázky.
+5. Navrhuj databázové entity na základě skutečných požadavků, nikoli pouze podle názvů obrazovek.
+6. U každé tabulky definuj její účel, sloupce, datové typy, primární klíč, cizí klíče, unikátní omezení a validační pravidla.
+7. Urči kardinality a povinnost jednotlivých vztahů.
+8. Posuď normalizaci, referenční integritu, indexy a transakční konzistenci.
+9. U obchodních pravidel určuj, zda mají být vynucena v databázi, aplikační logice, nebo na obou místech.
+10. Nepoužívej mazání, kaskády, archivaci ani změny stavů bez posouzení jejich dopadu na související data.
+11. U citlivých operací zvaž transakce, souběžný přístup a audit.
+12. Navrhuj bezpečnostní opatření podle citlivosti dat a rizik projektu.
+13. Nevkládej skutečná hesla, API klíče ani jiné tajné údaje do zdrojového kódu nebo dokumentace.
+14. U každého významného technického rozhodnutí vysvětli důvod a případné alternativy.
+15. Před implementací ověř, že návrh pokrývá všechny známé požadavky.
+16. Při změně schváleného modelu popiš dopad na data, API, aplikaci, migrace a testy.
+17. Všechny databázové skripty označ názvem databázového systému a jeho předpokládanou kompatibilitou.
+18. Nevydávej neotestovaný návrh za ověřené produkční řešení.
+19. Zachovávej konzistentní názvosloví entit, atributů, klíčů, stavů a identifikátorů.
+20. Pokud nelze rozhodnout bez vstupu zadavatele, jasně označ rozhodnutí jako nevyřešené.
+
+---
+
+# 16. POŽADOVANÝ POSTUP PRÁCE AI
+
+**Fáze 1 — Analýza**
+- Prostudovat celou specifikaci.
+- Vytvořit přehled požadavků.
+- Identifikovat nejasnosti, rozpory a chybějící informace.
+- Položit prioritizované doplňující otázky.
+
+**Fáze 2 — Koncepční návrh**
+- Popsat architekturu a hlavní komponenty.
+- Identifikovat entity a jejich vztahy.
+- Navrhnout hlavní pracovní postupy.
+- Předložit návrh ke schválení.
+
+**Fáze 3 — Detailní návrh**
+- Vytvořit logický a fyzický datový model.
+- Definovat atributy, klíče, omezení a indexy.
+- Popsat aplikační logiku, oprávnění a chybové stavy.
+- Zdokumentovat všechna zásadní rozhodnutí.
+
+**Fáze 4 — Implementační podklady**
+- Vytvořit SQL skripty a migrace.
+- Připravit specifikaci API a aplikačních komponent.
+- Připravit testovací scénáře.
+- Zdokumentovat nasazení a obnovu.
+
+**Fáze 5 — Kontrola**
+- Ověřit úplnost vůči požadavkům.
+- Zkontrolovat referenční integritu, oprávnění a konzistenci.
+- Identifikovat rizika a chybějící testy.
+- Vytvořit seznam bodů čekajících na schválení.
+
+**Zásada:** Do další fáze přejdi až po dokončení požadovaných výstupů předchozí fáze, případně výslovném souhlasu zadavatele s pokračováním.
+
+---
+
+# 17. STAV PROJEKTU A SCHVÁLENÍ
+
+- Aktuální fáze:
+- Aktuální verze specifikace:
+- Poslední schválený datový model:
+- Nevyřešené zásadní otázky:
+- Poslední provedená změna:
+- Další plánovaný krok:
+- Poznámky zadavatele:
+
+**Konec specifikace.**
